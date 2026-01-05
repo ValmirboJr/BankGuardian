@@ -1,4 +1,10 @@
 package org.example.bankguardian.response;
 
-public class AccountResponse {
+import lombok.Builder;
+
+import java.util.List;
+import java.util.UUID;
+
+@Builder
+public record AccountResponse(UUID accountid, String username, String email, List<TransactionResponse> transactions) {
 }
