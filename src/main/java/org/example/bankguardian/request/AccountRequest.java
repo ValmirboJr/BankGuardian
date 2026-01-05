@@ -1,4 +1,7 @@
 package org.example.bankguardian.request;
 
-public class AccountRequest {
+import lombok.Builder;
+
+@Builder
+public record AccountRequest(String email, String password,String username) {
 }
