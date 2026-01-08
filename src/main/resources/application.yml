@@ -46,3 +46,6 @@ management:
       export:
         enabled: false
 
+bankguardian:
+  security:
+    secret: "cbf29ce484222325"
